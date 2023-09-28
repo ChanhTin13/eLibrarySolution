@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Request</name>
+    </assembly>
+    <members>
+        <member name="T:Request.Auth.ChangePassword">
+            <summary>
+            Model đổi mật khẩu
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.oldPassword">
+            <summary>
+            Mật khẩu cũ
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.newPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.confirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordOTP.newPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordOTP.confirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.username">
+            <summary>
+            Email hoặc Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ResetPasswordModel.newPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ResetPasswordModel.confirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileName">
+            <summary>
+            Tên file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.contentType">
+            <summary>
+            Loại file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileExtension">
+            <summary>
+            Đuôi file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileRandomName">
+            <summary>
+            Tên lưu trong thư mục
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileUrl">
+            <summary>
+            Link download File
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.DomainCreate.active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.AuthorCreate.name">
+            <summary>
+            Tên tác giả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.username">
+            <summary>
+            Tên đăng nhập
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.gender">
+            <summary>
+            Giới tính
+            1 male - Name <br></br>
+            2 female - Nữ <br></br>
+            3 other - Khác <br></br>
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.roleCodes">
+            <summary>
+            Quyền của nhân viên, 
+            một nhân viên có thể có nhiều quyền, 
+            mẫu "admin,moderator"
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.gender">
+            <summary>
+            Giới tính
+            1 male - Name <br></br>
+            2 female - Nữ <br></br>
+            3 other - Khác <br></br>
+            </summary>
+        </member>
+    </members>
+</doc>

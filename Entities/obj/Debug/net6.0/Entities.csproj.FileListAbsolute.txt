@@ -1,0 +1,16 @@
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\bin\Debug\net6.0\Entities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\bin\Debug\net6.0\Entities.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\bin\Debug\net6.0\Entities.xml
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\bin\Debug\net6.0\Utilities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\bin\Debug\net6.0\Utilities.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\refint\Entities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\Entities.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Entities\obj\Debug\net6.0\ref\Entities.dll

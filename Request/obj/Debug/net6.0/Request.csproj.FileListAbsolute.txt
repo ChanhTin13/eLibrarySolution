@@ -1,0 +1,16 @@
+D:\z_sao_luu\My Project\eLibrarySolution\Request\bin\Debug\net6.0\Request.deps.json
+D:\z_sao_luu\My Project\eLibrarySolution\Request\bin\Debug\net6.0\Request.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Request\bin\Debug\net6.0\Request.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Request\bin\Debug\net6.0\Request.xml
+D:\z_sao_luu\My Project\eLibrarySolution\Request\bin\Debug\net6.0\Utilities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Request\bin\Debug\net6.0\Utilities.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.csproj.AssemblyReference.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.GeneratedMSBuildEditorConfig.editorconfig
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.AssemblyInfoInputs.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.AssemblyInfo.cs
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.csproj.CoreCompileInputs.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.csproj.CopyComplete
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\refint\Request.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\Request.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Request\obj\Debug\net6.0\ref\Request.dll

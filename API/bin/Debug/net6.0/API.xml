@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.AddressController.GetCities(Entities.DomainEntities.BaseSearch)">
+            <summary>
+            Lấy danh sách tỉnh/thành phố
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AddressController.GetDistricts(Entities.Search.DistrictsSearch)">
+            <summary>
+            Lấy danh sách quận/huyện
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AddressController.GetWards(Entities.Search.WardsSearch)">
+            <summary>
+            Lấy danh sách phường/xã
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NecessaryController.UploadFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            Upload Multiple File
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.Get">
+            <summary>
+            Danh sách quyền
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.UpdateItem(Request.RequestUpdate.RoleUpdate)">
+            <summary>
+            Cập nhật quyền
+            </summary>
+            <remarks>
+            --------------------------------- <br></br>
+            role <br></br>
+            admin = 1 <br></br>
+            moderator = 2 <br></br>
+            teacher = 3 <br></br>
+            student = 4 <br></br>
+            </remarks>
+            <param name="roleUpdate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.Get(Utilities.CoreContants.role)">
+            <summary>
+            Lấy danh sach phân quyền
+            </summary>
+            <remarks>
+            --------------------------------- <br></br>
+            role <br></br>
+            admin = 1 <br></br>
+            moderator = 2 <br></br>
+            teacher = 3 <br></br>
+            student = 4 <br></br>
+            </remarks>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.GetController(Utilities.CoreContants.role)">
+            <summary>
+            Lấy danh sách menu
+            </summary>
+            <remarks>
+            --------------------------------- <br></br>
+            role <br></br>
+            admin = 1 <br></br>
+            moderator = 2 <br></br>
+            teacher = 3 <br></br>
+            student = 4 <br></br></remarks>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.GetAction(Entities.Search.ActionSearch)">
+            <summary>
+            Lấy danh sách chức năng
+            </summary>
+            <remarks>
+            --------------------------------- <br></br>
+            role <br></br>
+            admin = 1 <br></br>
+            moderator = 2 <br></br>
+            teacher = 3 <br></br>
+            student = 4 <br></br>
+            </remarks>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.AddItem(Request.RequestCreate.UserCreate)">
+            <summary>
+            Thêm mới item dữ liệu
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.Get(Entities.Search.UserSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

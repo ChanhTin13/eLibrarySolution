@@ -1,0 +1,24 @@
+﻿using Request.DomainRequests;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Request.RequestCreate
+{
+    public class TitleCreate:DomainCreate
+    {
+        public string name { get; set; }
+        public int quantity { get; set; }
+        public int quantityReal { get; set; }
+        public int quantityLoaning { get; set; }=0;
+        public int quantityLost { get; set; } = 0;
+        public string thumbnail { get; set; }
+        public Guid authorId { get; set; }
+        /// <summary>
+        /// ví dụ: 1,2,3
+        /// </summary>
+        public string categoryId { get; set; }
+    }
+}

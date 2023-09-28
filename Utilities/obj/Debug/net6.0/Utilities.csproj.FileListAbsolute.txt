@@ -1,0 +1,12 @@
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\bin\Debug\net6.0\Utilities.deps.json
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\bin\Debug\net6.0\Utilities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\bin\Debug\net6.0\Utilities.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\Utilities.csproj.AssemblyReference.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\Utilities.AssemblyInfoInputs.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\Utilities.AssemblyInfo.cs
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\Utilities.csproj.CoreCompileInputs.cache
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\Utilities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\refint\Utilities.dll
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\Utilities.pdb
+D:\z_sao_luu\My Project\eLibrarySolution\Utilities\obj\Debug\net6.0\ref\Utilities.dll

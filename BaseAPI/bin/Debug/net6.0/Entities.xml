@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Entities</name>
+    </assembly>
+    <members>
+        <member name="P:Entities.DomainEntities.BaseSearch.pageIndex">
+            <summary>
+            Trang hiện tại
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.pageSize">
+            <summary>
+            Số lượng item trên 1 trang
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.searchContent">
+            <summary>
+            Nội dung tìm kiếm chung
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.orderBy">
+            <summary>
+            Không dùng
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.totalItem">
+            <summary>
+            Tổng số item phân trang
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.created">
+            <summary>
+            Ngày tạo
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.createdBy">
+            <summary>
+            Tạo bởi
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.updated">
+            <summary>
+            Ngày cập nhật
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.updatedBy">
+            <summary>
+            Người cập nhật
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.deleted">
+            <summary>
+            Cờ xóa
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.roleCodes">
+            <summary>
+            mẫu: "code,code"
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.orderBy">
+            <summary>
+            0 - Giảm dần
+            1 - Tăng gần
+            2 - Tên tăng dần
+            3 - Tên giảm dần
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentSearchPrivate.type">
+            <summary>
+            lấy học viên
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StaffSearchPrivate.type">
+            <summary>
+            lấy nhân viên
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearchByGeneralNotification.roleCodes">
+            <summary>
+            roleCodes : value1,value2
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearchByGeneralNotification.majorsId">
+            <summary>
+            majorsId : value1,value2
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Necessary.content">
+            <summary>
+            type 1 - Hình thức thanh toán(tbl_PaymentMethod)
+            type 2 - Mẫu(tbl_SampleConfig), mẫu các phiếu thu chi ...
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.gender">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.roles">
+            <summary>
+            [code,code]
+            </summary>
+        </member>
+    </members>
+</doc>
