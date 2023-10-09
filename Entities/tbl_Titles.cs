@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,8 @@ namespace Entities
         public int quantityLost { get; set; }
         public string thumbnail {  get; set; }
         public Guid? authorId { get; set; }
+        [NotMapped]
+        public string authorName {  get; set; } 
         public string categoryId { get; set; }
     }
 }

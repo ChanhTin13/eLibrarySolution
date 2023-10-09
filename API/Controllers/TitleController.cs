@@ -54,9 +54,10 @@ namespace API.Controllers
                 await Validate(item);
                 if (item != null)
                 {
-                    var author = await this.authorService.GetByIdAsync(item.authorId.Value);
-                    if(author==null)
-                        throw new AppException("Không tìm thấy tác giả"); 
+                    //var author = await this.authorService.GetByIdAsync(item.authorId.Value);
+                    //if(author==null)
+                    //    throw new AppException("Không tìm thấy tác giả");
+                    item.quantityReal = itemModel.quantity;
                     success = await this.domainService.CreateAsync(item);
                     if (success)
                     {

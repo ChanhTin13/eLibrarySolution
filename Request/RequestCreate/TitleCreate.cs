@@ -11,11 +11,11 @@ namespace Request.RequestCreate
     {
         public string name { get; set; }
         public int quantity { get; set; }
-        public int quantityReal { get; set; }
-        public int quantityLoaning { get; set; }=0;
-        public int quantityLost { get; set; } = 0;
+        //public int quantityReal { get; set; }
+        //public int quantityLoaning { get; set; }=0;
+        //public int quantityLost { get; set; } = 0;
         public string thumbnail { get; set; }
-        public Guid authorId { get; set; }
+        public Guid? authorId { get; set; }
         /// <summary>
         /// ví dụ: 1,2,3
         /// </summary>
