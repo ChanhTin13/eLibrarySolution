@@ -10,7 +10,7 @@ using Entities.Search;
 
 namespace Interface.Services
 {
-    public interface IAuthorService : IDomainService<tbl_Authors, AuthorSearch>
+    public interface IAuthorService : IDomainService<tbl_Author, AuthorSearch>
     {
     }
 }

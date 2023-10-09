@@ -8,7 +8,7 @@ using Service.Services.DomainServices;
 
 namespace Service.Services
 {
-    public class AuthorsService : DomainService<tbl_Authors, AuthorSearch>, IAuthorService
+    public class AuthorsService : DomainService<tbl_Author, AuthorSearch>, IAuthorService
     {
         public AuthorsService(IAppUnitOfWork unitOfWork, IMapper mapper) : base(unitOfWork, mapper)
         {

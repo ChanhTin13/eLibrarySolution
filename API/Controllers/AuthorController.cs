@@ -18,13 +18,13 @@ namespace API.Controllers
     [ApiController]
     [Description("Tác giả")]
     [Authorize]
-    public class AuthorController : BaseController<tbl_Authors, AuthorCreate, AuthorUpdate, AuthorSearch>
+    public class AuthorController : BaseController<tbl_Author, AuthorCreate, AuthorUpdate, AuthorSearch>
     {
         protected IAuthorService AuthorService;
         public AuthorController
         (
             IServiceProvider serviceProvider,
-            ILogger<BaseController<tbl_Authors, AuthorCreate, AuthorUpdate, AuthorSearch>> logger,
+            ILogger<BaseController<tbl_Author, AuthorCreate, AuthorUpdate, AuthorSearch>> logger,
             IWebHostEnvironment env
         ) : base(serviceProvider, logger, env)
         {
