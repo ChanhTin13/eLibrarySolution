@@ -10,6 +10,8 @@ namespace Request.RequestUpdate
     public class BookUpdate:DomainUpdate
     {
         public string ISBN { get; set; }
+        public Guid? counterId { get; set; }
+
     }
 }
  

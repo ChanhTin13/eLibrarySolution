@@ -12,7 +12,7 @@ namespace Entities
         public string ISBN {  get; set; }
         /// <summary>
         /// 0: chưa mượn
-        /// 1: đang mượn
+        /// 1: đang mượn 
         /// </summary>
         public bool status {  get; set; }
         public int counterId {  get; set; }

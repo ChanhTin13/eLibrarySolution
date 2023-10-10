@@ -38,7 +38,12 @@ namespace BaseAPI.Controllers
         protected IWebHostEnvironment env;
         private readonly IUserService userService;
 
-        public BaseController(IServiceProvider serviceProvider, ILogger<BaseController<E, C, U, F>> logger, IWebHostEnvironment env)
+        public BaseController
+            (
+            IServiceProvider serviceProvider,
+            ILogger<BaseController<E, C, U, F>> logger,
+            IWebHostEnvironment env
+            )
         {
             this.env = env;
             this.logger = logger;

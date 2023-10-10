@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class tbl_Titles : DomainEntities.DomainEntities
+    public class tbl_Title : DomainEntities.DomainEntities
     {
         public string name {  get; set; }
         public int quantity {  get; set; }

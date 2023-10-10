@@ -58,6 +58,7 @@ namespace BaseAPI
             // scope  
             services.AddScoped<IAuthorService, AuthorsService>();
             services.AddScoped<ITitleService,TitleService>();
+            services.AddScoped<ICategoryService, CategoryService>();// thể loại
         }
 
         public static void ConfigureSwagger(this IServiceCollection services)

@@ -22,14 +22,14 @@ namespace API.Controllers
     [ApiController]
     [Description("Đầu sách")]
     [Authorize]
-    public class TitleController : BaseController<tbl_Titles, TitleCreate, TitleUpdate, TitleSearch>
+    public class TitleController : BaseController<tbl_Title, TitleCreate, TitleUpdate, TitleSearch>
     {
         protected ITitleService titleService;
         protected IAuthorService authorService;
         public TitleController
         (
             IServiceProvider serviceProvider,
-            ILogger<BaseController<tbl_Titles, TitleCreate, TitleUpdate, TitleSearch>> logger,
+            ILogger<BaseController<tbl_Title, TitleCreate, TitleUpdate, TitleSearch>> logger,
             IWebHostEnvironment env
         ) : base(serviceProvider, logger, env)
         {
@@ -50,7 +50,7 @@ namespace API.Controllers
             bool success = false;
             if (ModelState.IsValid)
             {
-                var item = mapper.Map<tbl_Titles>(itemModel);
+                var item = mapper.Map<tbl_Title>(itemModel);
                 await Validate(item);
                 if (item != null)
                 {

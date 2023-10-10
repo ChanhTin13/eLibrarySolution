@@ -25,6 +25,27 @@
             <param name="baseSearch"></param>
             <returns></returns>
         </member>
+        <member name="M:API.Controllers.BookController.AddItem(Request.RequestCreate.BookCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BookController.UpdateItem(Request.RequestUpdate.BookUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BookController.Get(Entities.Search.BookSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
         <member name="M:API.Controllers.NecessaryController.UploadFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
             <summary>
             Upload Multiple File
@@ -95,6 +116,13 @@
             student = 4 <br></br>
             </remarks>
             <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TitleController.AddItem(Request.RequestCreate.TitleCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
             <returns></returns>
         </member>
         <member name="M:API.Controllers.UserController.AddItem(Request.RequestCreate.UserCreate)">

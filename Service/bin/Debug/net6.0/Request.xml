@@ -104,6 +104,41 @@
             Tên tác giả
             </summary>
         </member>
+        <member name="P:Request.RequestCreate.LibraryLoanCreate.readerId">
+            <summary>
+            người mượn
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.LibraryLoanCreate.librarianId">
+            <summary>
+            thủ thư
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.LibraryLoanDetail.dateLoan">
+            <summary>
+            ngày mượn
+            </summary> 
+        </member>
+        <member name="P:Request.RequestCreate.LibraryLoanDetail.dateExpire">
+            <summary>
+            ngày hết hạn
+            </summary> 
+        </member>
+        <member name="P:Request.RequestCreate.LibraryLoanDetail.dateReturn">
+            <summary>
+            ngày trả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.LibraryLoanDetail.renewals">
+            <summary>
+            số lần gia hạn
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TitleCreate.categoryId">
+            <summary>
+            ví dụ: 1,2,3
+            </summary>
+        </member>
         <member name="P:Request.RequestCreate.UserCreate.username">
             <summary>
             Tên đăng nhập
@@ -147,6 +182,16 @@
             Quyền của nhân viên, 
             một nhân viên có thể có nhiều quyền, 
             mẫu "admin,moderator"
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.LibraryLoanUpdate.readerId">
+            <summary>
+            người mượn
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.LibraryLoanUpdate.librarianId">
+            <summary>
+            thủ thư
             </summary>
         </member>
         <member name="P:Request.RequestUpdate.UserUpdate.fullName">

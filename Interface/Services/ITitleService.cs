@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Interface.Services
 {
-    public interface ITitleService:IDomainService<tbl_Titles,TitleSearch>
+    public interface ITitleService:IDomainService<tbl_Title,TitleSearch>
     {
         Task<object> UpdateThumbnail(Guid titleId);
         Task<object> UpdateQuantityLost(Guid titleId);

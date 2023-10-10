@@ -59,6 +59,11 @@
             Cờ active
             </summary>
         </member>
+        <member name="P:Entities.Search.TitleSearch.categoryId">
+            <summary>
+            ví dụ: 1,2,3
+            </summary>
+        </member>
         <member name="P:Entities.Search.UserSearch.roleCodes">
             <summary>
             mẫu: "code,code"
@@ -90,6 +95,53 @@
         <member name="P:Entities.Search.UserSearchByGeneralNotification.majorsId">
             <summary>
             majorsId : value1,value2
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Book.status">
+            <summary>
+            0: chưa mượn
+            1: đang mượn
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Book.isLost">
+            <summary>
+            0: còn sách
+            1: mất sách
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LibraryLoan.code">
+            <summary>
+            mã phiếu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LibraryLoan.readerId">
+            <summary>
+            người mượn
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LibraryLoan.librarianId">
+            <summary>
+            thủ thư
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LibraryLoanDetail.dateLoan">
+            <summary>
+            ngày mượn
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LibraryLoanDetail.dateExpire">
+            <summary>
+            ngày hết hạn
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LibraryLoanDetail.dateReturn">
+            <summary>
+            ngày trả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LibraryLoanDetail.renewals">
+            <summary>
+            số lần gia hạn
             </summary>
         </member>
         <member name="P:Entities.tbl_Necessary.content">

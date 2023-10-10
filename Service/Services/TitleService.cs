@@ -12,7 +12,7 @@ using Interface.UnitOfWork;
 
 namespace Service.Services
 {
-    public class TitleService : DomainService<tbl_Titles, TitleSearch>, ITitleService
+    public class TitleService : DomainService<tbl_Title, TitleSearch>, ITitleService
     {
 
         public TitleService(IAppUnitOfWork unitOfWork, IMapper mapper) : base(unitOfWork, mapper)
