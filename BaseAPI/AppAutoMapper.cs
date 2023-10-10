@@ -31,7 +31,10 @@ namespace Models.AutoMapper
             CreateMap<AuthorUpdate, tbl_Author>().ReverseMap(); 
             // đầu sách
             CreateMap<TitleCreate, tbl_Title>().ReverseMap();
-            CreateMap<TitleUpdate, tbl_Title>().ReverseMap(); 
+            CreateMap<TitleUpdate, tbl_Title>().ReverseMap();
+            // counter- kệ sách
+            CreateMap<CounterCreate, tbl_Counter>().ReverseMap();
+            CreateMap<CounterUpdate, tbl_Counter>().ReverseMap();
             // sách
             CreateMap<BookCreate, tbl_Book>().ReverseMap();
             CreateMap<BookUpdate, tbl_Book>().ReverseMap(); 

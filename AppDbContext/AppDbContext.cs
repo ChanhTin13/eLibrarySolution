@@ -27,9 +27,11 @@ namespace AppDbContext
         public DbSet<tbl_Cities> tbl_Cities { get; set; }
         public DbSet<tbl_Users> tbl_Users { get; set; }
         public DbSet<tbl_Role> tbl_Role { get; set; }
+        //---------------------------------------
         public DbSet<tbl_Author> tbl_Author { get; set; }
-        public DbSet<tbl_Title> tbl_Title { get; set; }
         public DbSet<tbl_Category> tbl_Category { get; set; }
+        public DbSet<tbl_Title> tbl_Title { get; set; }
+        public DbSet<tbl_Counter> tbl_Counter { get; set; }
         public DbSet<tbl_Book> tbl_Book { get; set; }
         public DbSet<tbl_LibraryLoan> tbl_LibraryLoan { get; set; }
         #region store model

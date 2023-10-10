@@ -25,7 +25,7 @@ namespace API.Controllers
     public class TitleController : BaseController<tbl_Title, TitleCreate, TitleUpdate, TitleSearch>
     {
         protected ITitleService titleService;
-        protected IAuthorService authorService;
+        protected ICounterService authorService;
         public TitleController
         (
             IServiceProvider serviceProvider,
@@ -34,7 +34,7 @@ namespace API.Controllers
         ) : base(serviceProvider, logger, env)
         {
             this.domainService = serviceProvider.GetRequiredService<ITitleService>();
-            this.authorService = serviceProvider.GetRequiredService<IAuthorService>();
+            this.authorService = serviceProvider.GetRequiredService<ICounterService>();
         }
         /// <summary>
         /// Thêm mới item

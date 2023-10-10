@@ -57,8 +57,10 @@ namespace BaseAPI
             services.AddScoped<IRoleService, RoleService>();
             // scope  
             services.AddScoped<IAuthorService, AuthorsService>();
-            services.AddScoped<ITitleService,TitleService>();
             services.AddScoped<ICategoryService, CategoryService>();// thể loại
+            services.AddScoped<ITitleService,TitleService>();
+            services.AddScoped<ICounterService, CounterService>();//kệ sách
+            services.AddScoped<IBookService, BookService>(); 
         }
 
         public static void ConfigureSwagger(this IServiceCollection services)
