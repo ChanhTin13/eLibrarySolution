@@ -28,13 +28,13 @@ namespace API.Controllers
     [ApiController]
     [Description("Tác giả")]
     [Authorize]
-    public class BookController : BaseController<tbl_Book, 
+    public class BookController : BaseController<tbl_Book,
                                                  BookCreate,
                                                  BookUpdate,
                                                  BookSearch>
     {
         protected IBookService bookService;
-        protected ITitleService titleService; 
+        protected ITitleService titleService;
         protected IAppDbContext appDbContext;
         public BookController
         (
@@ -84,7 +84,7 @@ namespace API.Controllers
                     // kiểm tra đầu sách
                     await Validate(item);
 
-                    await this.domainService.CreateAsync(item);  
+                    await this.domainService.CreateAsync(item);
                     await tran.CommitAsync();
                 }
                 catch (AppException e)
@@ -116,7 +116,7 @@ namespace API.Controllers
             {
                 var item = mapper.Map<tbl_Book>(itemModel);
                 if (item != null)
-                {  
+                {
                     success = await this.domainService.UpdateAsync(item);
                     if (success)
                         appDomainResult.resultCode = (int)HttpStatusCode.OK;
@@ -137,7 +137,7 @@ namespace API.Controllers
         [Description("Lấy thông tin sách theo IBSN")]
         public async Task<AppDomainResult> GetBookByIBSN(string IBSN)
         {
-            AppDomainResult appDomainResult = new AppDomainResult(); 
+            AppDomainResult appDomainResult = new AppDomainResult();
             var item = await this.bookService.GetBookByIBSNAsync(IBSN);
             if (item != null)
             {
@@ -160,5 +160,18 @@ namespace API.Controllers
             return appDomainResult;
         }
 
+        /// <summary>
+        /// Bỏ ds phân trang
+        /// </summary>
+        /// <param name="baseSearch"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [AppAuthorize]
+        [Description("Lấy danh sách")]
+        public override async Task<AppDomainResult> Get([FromQuery] BookSearch baseSearch)
+        {
+            AppDomainResult appDomainResult = new AppDomainResult();
+            return appDomainResult;
+        }
     }
 }

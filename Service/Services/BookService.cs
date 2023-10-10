@@ -29,10 +29,6 @@ namespace Service.Services
             return data;
         }
 
-        protected override string GetStoreProcName()
-        {
-            return "Get_Books";
-        }
 
     }
 }
