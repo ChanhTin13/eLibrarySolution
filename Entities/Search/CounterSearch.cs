@@ -9,6 +9,6 @@ namespace Entities.Search
 {
     public class CounterSearch:BaseSearch
     {
-
+        public string name {  get; set; }
     }
 }

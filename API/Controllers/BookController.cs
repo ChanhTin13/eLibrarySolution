@@ -37,7 +37,7 @@ namespace API.Controllers
         protected ITitleService titleService;
         protected IAppDbContext appDbContext;
         public BookController
-        (
+        ( 
             IServiceProvider serviceProvider,
             ILogger<BaseController<tbl_Book,
                                     BookCreate,

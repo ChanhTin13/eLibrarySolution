@@ -20,8 +20,14 @@ namespace Request.RequestCreate
         /// thủ thư
         /// </summary>
         public Guid librarianId { get; set; }
-        public int totalBook { get; set; }
         public List<LibraryLoanDetail> listBookLoan {  get; set; }
+        /// <summary>
+        /// ngày mượn=ngày lập phiếu
+        /// </summary> 
+        [JsonIgnore]
+        public double dateLoan { get; set; } = Timestamp.Now();
+        [JsonIgnore]
+        public int totalBook { get; set; }  
     }
     public class LibraryLoanDetail 
     {
@@ -30,13 +36,11 @@ namespace Request.RequestCreate
         public string bookName {  get; set; }
         public string IBSN {  get; set; }
         /// <summary>
-        /// ngày mượn
-        /// </summary> 
-        public double dateLoan { get; set; }
-        /// <summary>
         /// ngày hết hạn
+        /// mặc định 3d kể từ ngày
         /// </summary> 
-        public double dateExpire { get; set; }
+        [JsonIgnore]
+        public double dateExpire { get; set; }=Timestamp.Date(DateTime.Now.AddDays(3));
         /// <summary>
         /// ngày trả
         /// </summary>

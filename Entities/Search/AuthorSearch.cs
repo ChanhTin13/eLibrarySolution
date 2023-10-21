@@ -9,5 +9,6 @@ namespace Entities.Search
 {
     public class AuthorSearch:BaseSearch
     { 
+        public string name {  get; set; }
     }
 }
