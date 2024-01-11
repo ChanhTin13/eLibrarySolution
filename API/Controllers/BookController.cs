@@ -34,10 +34,9 @@ namespace API.Controllers
                                                  BookSearch>
     {
         protected IBookService bookService;
-        protected ITitleService titleService;
-        protected IAppDbContext appDbContext;
+        protected ITitleService titleService; 
         public BookController
-        ( 
+        (
             IServiceProvider serviceProvider,
             ILogger<BaseController<tbl_Book,
                                     BookCreate,
@@ -49,15 +48,14 @@ namespace API.Controllers
             this.domainService = serviceProvider.GetRequiredService<IBookService>();
             this.bookService = serviceProvider.GetRequiredService<IBookService>();
             this.titleService = serviceProvider.GetRequiredService<ITitleService>();
-            this.titleService = serviceProvider.GetRequiredService<ITitleService>();
-            this.appDbContext = serviceProvider.GetRequiredService<IAppDbContext>();
+            this.titleService = serviceProvider.GetRequiredService<ITitleService>(); 
         }
 
 
 
         public override async Task Validate(tbl_Book model)
         {
-            var title = await titleService.GetByIdAsync(model.titleId.Value);
+            var title = await titleService.GetByIdAsync(model.titleId);
             if (title == null)
                 throw new AppException("Đầu sách không tồn tại");
         }
@@ -71,13 +69,10 @@ namespace API.Controllers
         [Description("Thêm mới")]
         public override async Task<AppDomainResult> AddItem([FromBody] BookCreate itemModel)
         {
-            using (var tran = await appDbContext.Database.BeginTransactionAsync())
+            try
             {
-                try
-                {
-                    if (!ModelState.IsValid)
-                        throw new AppException(ModelState.GetErrorMessage());
-
+                if (ModelState.IsValid)
+                { 
                     var item = mapper.Map<tbl_Book>(itemModel);
                     if (item == null)
                         throw new AppException("Item không tồn tại");
@@ -85,19 +80,23 @@ namespace API.Controllers
                     await Validate(item);
 
                     await this.domainService.CreateAsync(item);
-                    await tran.CommitAsync();
+                    return new AppDomainResult
+                    {
+                        success = true,
+                        resultCode = (int)HttpStatusCode.OK
+                    };
                 }
-                catch (AppException e)
+                else
                 {
-                    await tran.RollbackAsync();
-                    throw new AppException(e.Message);
+
+                    throw new AppException(ModelState.GetErrorMessage());
                 }
+
             }
-            return new AppDomainResult
-            {
-                success = true,
-                resultCode = (int)HttpStatusCode.OK
-            };
+            catch (AppException e)
+            { 
+                throw new AppException(e.Message);
+            }
         }
 
         /// <summary>
@@ -131,8 +130,13 @@ namespace API.Controllers
                 throw new AppException(ModelState.GetErrorMessage());
             return appDomainResult;
         }
-
-        [HttpGet("{IBSN}")]
+        /// <summary>
+        /// Lấy thông tin sách theo IBSN
+        /// </summary>
+        /// <param name="IBSN"></param>
+        /// <returns></returns>
+        /// <exception cref="KeyNotFoundException"></exception>
+        [HttpGet("IBSN")]
         [AppAuthorize]
         [Description("Lấy thông tin sách theo IBSN")]
         public async Task<AppDomainResult> GetBookByIBSN(string IBSN)
@@ -142,7 +146,7 @@ namespace API.Controllers
             if (item != null)
             {
 
-                var title = await titleService.GetByIdAsync(item.titleId.Value);
+                var title = await titleService.GetByIdAsync(item.titleId);
                 //var counter = await coun.GetByIdAsync(item.examId.Value);
                 item.titleName = title?.name;
                 //item.counterName = counter?.name;
@@ -155,7 +159,7 @@ namespace API.Controllers
             }
             else
             {
-                throw new KeyNotFoundException("Item không tồn tại");
+                throw new KeyNotFoundException(ApiMessage.ItemNotFound);
             }
             return appDomainResult;
         }
@@ -165,13 +169,13 @@ namespace API.Controllers
         /// </summary>
         /// <param name="baseSearch"></param>
         /// <returns></returns>
-        [HttpGet]
-        [AppAuthorize]
-        [Description("Lấy danh sách")]
+        [NonAction]
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         public override async Task<AppDomainResult> Get([FromQuery] BookSearch baseSearch)
         {
             AppDomainResult appDomainResult = new AppDomainResult();
             return appDomainResult;
         }
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     }
 }

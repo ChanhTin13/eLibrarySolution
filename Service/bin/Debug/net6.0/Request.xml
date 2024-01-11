@@ -114,14 +114,15 @@
             thủ thư
             </summary>
         </member>
-        <member name="P:Request.RequestCreate.LibraryLoanDetail.dateLoan">
+        <member name="P:Request.RequestCreate.LibraryLoanCreate.dateLoan">
             <summary>
-            ngày mượn
+            ngày mượn=ngày lập phiếu
             </summary> 
         </member>
         <member name="P:Request.RequestCreate.LibraryLoanDetail.dateExpire">
             <summary>
             ngày hết hạn
+            mặc định 3d kể từ ngày
             </summary> 
         </member>
         <member name="P:Request.RequestCreate.LibraryLoanDetail.dateReturn">
@@ -184,14 +185,9 @@
             mẫu "admin,moderator"
             </summary>
         </member>
-        <member name="P:Request.RequestUpdate.LibraryLoanUpdate.readerId">
+        <member name="P:Request.RequestUpdate.TitleUpdate.categoryId">
             <summary>
-            người mượn
-            </summary>
-        </member>
-        <member name="P:Request.RequestUpdate.LibraryLoanUpdate.librarianId">
-            <summary>
-            thủ thư
+            ví dụ: 1,2,3
             </summary>
         </member>
         <member name="P:Request.RequestUpdate.UserUpdate.fullName">

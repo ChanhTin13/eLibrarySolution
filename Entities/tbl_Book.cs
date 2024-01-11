@@ -9,16 +9,16 @@ namespace Entities
 {
     public class tbl_Book : DomainEntities.DomainEntities
     {
-        public string ISBN {  get; set; }
+        public string ISBN { get; set; }
         /// <summary>
         /// 0: chưa mượn
         /// 1: đang mượn 
         /// </summary>
-        public bool status {  get; set; }
-        public int counterId {  get; set; }
-        [NotMapped]
-        public string counterName { get; set; }
-        public Guid? titleId { get; set; }
+        public bool status { get; set; }
+        //public Guid counterId { get; set; }
+        //[NotMapped]
+        //public string counterName { get; set; }
+        public Guid titleId { get; set; }
         [NotMapped]
         public string titleName { get; set; }
         /// <summary>

@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 namespace Entities.Search
 {
     public class CategorySearch:BaseSearch
-    {
-        public string name {  get; set; }
+    { 
     }
 }

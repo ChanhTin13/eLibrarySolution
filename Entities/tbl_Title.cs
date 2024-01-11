@@ -17,7 +17,10 @@ namespace Entities
         public string thumbnail {  get; set; }
         public Guid? authorId { get; set; }
         [NotMapped]
-        public string authorName {  get; set; } 
+        public string authorName {  get; set; }
+        /// Chuỗi json chứa categoryId
         public string categoryId { get; set; }
+        [NotMapped]
+        public string categoryName { get; set; }
     }
 }

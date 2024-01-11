@@ -59,11 +59,6 @@
             Cờ active
             </summary>
         </member>
-        <member name="P:Entities.Search.TitleSearch.categoryId">
-            <summary>
-            ví dụ: 1,2,3
-            </summary>
-        </member>
         <member name="P:Entities.Search.UserSearch.roleCodes">
             <summary>
             mẫu: "code,code"
@@ -100,7 +95,7 @@
         <member name="P:Entities.tbl_Book.status">
             <summary>
             0: chưa mượn
-            1: đang mượn
+            1: đang mượn 
             </summary>
         </member>
         <member name="P:Entities.tbl_Book.isLost">
@@ -149,6 +144,9 @@
             type 1 - Hình thức thanh toán(tbl_PaymentMethod)
             type 2 - Mẫu(tbl_SampleConfig), mẫu các phiếu thu chi ...
             </summary>
+        </member>
+        <member name="P:Entities.tbl_Title.categoryId">
+            Chuỗi json chứa categoryId
         </member>
         <member name="P:Entities.tbl_Users.username">
             <summary>

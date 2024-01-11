@@ -29,6 +29,7 @@ namespace API.Controllers
         ) : base(serviceProvider, logger, env)
         {
             this.domainService = serviceProvider.GetRequiredService<ICategoryService>();
+            this.categoryService = serviceProvider.GetRequiredService<ICategoryService>();
         }
     }
 }

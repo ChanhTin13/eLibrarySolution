@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppDbContext.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230928080203_a")]
-    partial class a
+    [Migration("20240111050206_check")]
+    partial class check
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace AppDbContext.Migrations
                 .HasAnnotation("ProductVersion", "5.0.13")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Entities.tbl_Authors", b =>
+            modelBuilder.Entity("Entities.tbl_Author", b =>
                 {
                     b.Property<Guid>("id")
                         .ValueGeneratedOnAdd()
@@ -50,10 +50,10 @@ namespace AppDbContext.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("tbl_Authors");
+                    b.ToTable("tbl_Author");
                 });
 
-            modelBuilder.Entity("Entities.tbl_Books", b =>
+            modelBuilder.Entity("Entities.tbl_Book", b =>
                 {
                     b.Property<Guid>("id")
                         .ValueGeneratedOnAdd()
@@ -65,9 +65,6 @@ namespace AppDbContext.Migrations
                     b.Property<bool?>("active")
                         .HasColumnType("bit");
 
-                    b.Property<string>("counterId")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<double?>("created")
                         .HasColumnType("float");
 
@@ -77,10 +74,13 @@ namespace AppDbContext.Migrations
                     b.Property<bool?>("deleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("isLost")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("status")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("titleId")
+                    b.Property<Guid>("titleId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<double?>("updated")
@@ -91,7 +91,39 @@ namespace AppDbContext.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("tbl_Books");
+                    b.ToTable("tbl_Book");
+                });
+
+            modelBuilder.Entity("Entities.tbl_Category", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("active")
+                        .HasColumnType("bit");
+
+                    b.Property<double?>("created")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("updated")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("id");
+
+                    b.ToTable("tbl_Category");
                 });
 
             modelBuilder.Entity("Entities.tbl_Cities", b =>
@@ -130,6 +162,38 @@ namespace AppDbContext.Migrations
                     b.HasKey("id");
 
                     b.ToTable("tbl_Cities");
+                });
+
+            modelBuilder.Entity("Entities.tbl_Counter", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("active")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("counterName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("created")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<double?>("updated")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("id");
+
+                    b.ToTable("tbl_Counter");
                 });
 
             modelBuilder.Entity("Entities.tbl_Districts", b =>
@@ -171,6 +235,53 @@ namespace AppDbContext.Migrations
                     b.HasKey("id");
 
                     b.ToTable("tbl_Districts");
+                });
+
+            modelBuilder.Entity("Entities.tbl_LibraryLoan", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("active")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("code")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("created")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("createdBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isReturnAll")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("librarianId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("listBookLoan")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("readerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("totalBook")
+                        .HasColumnType("int");
+
+                    b.Property<double?>("updated")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("updatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("id");
+
+                    b.ToTable("tbl_LibraryLoan");
                 });
 
             modelBuilder.Entity("Entities.tbl_Necessary", b =>
@@ -249,7 +360,7 @@ namespace AppDbContext.Migrations
                     b.ToTable("tbl_Role");
                 });
 
-            modelBuilder.Entity("Entities.tbl_Titles", b =>
+            modelBuilder.Entity("Entities.tbl_Title", b =>
                 {
                     b.Property<Guid>("id")
                         .ValueGeneratedOnAdd()
@@ -260,6 +371,9 @@ namespace AppDbContext.Migrations
 
                     b.Property<Guid?>("authorId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("categoryId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double?>("created")
                         .HasColumnType("float");
@@ -296,7 +410,7 @@ namespace AppDbContext.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("tbl_Titles");
+                    b.ToTable("tbl_Title");
                 });
 
             modelBuilder.Entity("Entities.tbl_Users", b =>

@@ -40,6 +40,7 @@
 
   <ItemGroup>
     <Folder Include="Upload\DocumentLibrary\" />
+    <Folder Include="Upload\Title\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

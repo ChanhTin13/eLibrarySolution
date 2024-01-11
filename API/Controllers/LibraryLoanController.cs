@@ -55,7 +55,7 @@ namespace API.Controllers
         {
             var item = await domainService.GetByIdAsync(model.id);
             if (item == null)
-                throw new AppException("Phiếu mượn sách không tồn tại");
+                throw new AppException(ApiMessage.ItemNotFound);
         }
         /// <summary>
         /// mượn sách
@@ -180,6 +180,7 @@ namespace API.Controllers
         /// <param name="itemModel"></param>
         /// <returns></returns>
         [HttpPut]
+        [Route("renewal")]
         [AppAuthorize]
         [Description("Gia hạn")]
         public async Task<AppDomainResult> Renewal([FromBody] LibraryLoanUpdate itemModel)

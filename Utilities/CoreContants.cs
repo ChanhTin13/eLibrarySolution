@@ -11,6 +11,7 @@ namespace Utilities
 
         public const string UPLOAD_FOLDER_NAME = "Upload";
         public const string TEMP_FOLDER_NAME = "Temp";
+        public const string TITLE_FOLDER_NAME = "Title";
         public const string TEMPLATE_FOLDER_NAME = "Template";
         public const string CATALOGUE_TEMPLATE_NAME = "CatalogueTemplate.xlsx";
         public const string USER_FOLDER_NAME = "User";

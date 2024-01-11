@@ -39,11 +39,40 @@
             <param name="itemModel"></param>
             <returns></returns>
         </member>
+        <member name="M:API.Controllers.BookController.GetBookByIBSN(System.String)">
+            <summary>
+            Lấy thông tin sách theo IBSN
+            </summary>
+            <param name="IBSN"></param>
+            <returns></returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException"></exception>
+        </member>
         <member name="M:API.Controllers.BookController.Get(Entities.Search.BookSearch)">
             <summary>
-            Lấy danh sách item phân trang
+            Bỏ ds phân trang
             </summary>
             <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.LibraryLoanController.AddItem(Request.RequestCreate.LibraryLoanCreate)">
+            <summary>
+            mượn sách
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.LibraryLoanController.UpdateItem(Request.RequestUpdate.LibraryLoanUpdate)">
+            <summary>
+            Trả sách
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.LibraryLoanController.Renewal(Request.RequestUpdate.LibraryLoanUpdate)">
+            <summary>
+            Gia hạn
+            </summary>
+            <param name="itemModel"></param>
             <returns></returns>
         </member>
         <member name="M:API.Controllers.NecessaryController.UploadFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
@@ -120,10 +149,20 @@
         </member>
         <member name="M:API.Controllers.TitleController.AddItem(Request.RequestCreate.TitleCreate)">
             <summary>
-            Thêm mới item
+            Thêm mới đầu sách
             </summary>
             <param name="itemModel"></param>
             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TitleController.UploadFileImage(Microsoft.AspNetCore.Http.IFormFile,System.Guid)">
+            <summary>
+            upload 1 image
+            </summary>
+            <param name="thumnail"></param>
+            <param name="titleId"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:Extensions.AppException"></exception>
         </member>
         <member name="M:API.Controllers.UserController.AddItem(Request.RequestCreate.UserCreate)">
             <summary>

@@ -20,7 +20,7 @@ namespace API.Controllers
     [Authorize]
     public class AuthorController : BaseController<tbl_Author, AuthorCreate, AuthorUpdate, AuthorSearch>
     {
-        protected ICounterService authorService;
+        private IAuthorService authorService;
         public AuthorController
         (
             IServiceProvider serviceProvider,
@@ -29,6 +29,7 @@ namespace API.Controllers
         ) : base(serviceProvider, logger, env)
         {
             this.domainService = serviceProvider.GetRequiredService<IAuthorService>();
+            this.authorService = serviceProvider.GetRequiredService<IAuthorService>();
         }
     }
 }

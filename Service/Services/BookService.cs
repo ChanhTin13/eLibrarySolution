@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks; 
 using Utilities;
 
 namespace Service.Services
@@ -22,8 +22,7 @@ namespace Service.Services
 
         public async Task<tbl_Book> GetBookByIBSNAsync(string IBSN)
         {   
-            var data = await unitOfWork.Repository<tbl_Book>().GetQueryable().FirstOrDefaultAsync(x=>x.deleted==false && x.active==true 
-                                                                               && x.ISBN==IBSN); 
+            var data = await GetSingleAsync(x=>x.deleted==false && x.active==true && x.ISBN==IBSN); 
             return data;
         }
 
