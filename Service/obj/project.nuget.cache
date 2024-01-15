@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aNmsxqWv/7MQ9VDivb9qehbwAWD9qbN35wjJu1I1zcCy76kqv0m86m+VDQTBRw6aZ5IbQABeXRIuJF5V2GA0Sw==",
+  "dgSpecHash": "ABvQpRWxk3Dx7NuPz9r0iFd2Ib+77RZVD6G5FAlfJoMumAH5YePcSMyrC43p3Cw9IBFmd4xZP2tD7CcgCI67hA==",
   "success": true,
   "projectFilePath": "D:\\z_sao_luu\\My Project\\eLibrarySolution\\Service\\Service.csproj",
   "expectedPackageFiles": [
@@ -170,7 +170,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.pipelines\\4.5.2\\system.io.pipelines.4.5.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.linq.dynamic.core\\1.2.15\\system.linq.dynamic.core.1.2.15.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.linq.dynamic.core\\1.3.7\\system.linq.dynamic.core.1.3.7.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",

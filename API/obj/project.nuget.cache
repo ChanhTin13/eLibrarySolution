@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BMf/Po6YVVkg4BqmwdMZY0GXziQ7Vd5vKmiezj9FECZ+JSeboAUnClIQah2UZsN+YF1KlyjeABVLiUQpyqh1KA==",
+  "dgSpecHash": "33f6EkAeP+j2uRF5rDotrl+mL9YCA84wjTqZONMFlJkcVAWYpyUS+cbeMS6t67wYWLxBnoJdw9IbKfRDTDwRgQ==",
   "success": true,
   "projectFilePath": "D:\\z_sao_luu\\My Project\\eLibrarySolution\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -188,7 +188,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.pipelines\\4.5.2\\system.io.pipelines.4.5.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.linq.dynamic.core\\1.2.15\\system.linq.dynamic.core.1.2.15.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.linq.dynamic.core\\1.3.7\\system.linq.dynamic.core.1.3.7.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.net.websockets.websocketprotocol\\4.5.1\\system.net.websockets.websocketprotocol.4.5.1.nupkg.sha512",

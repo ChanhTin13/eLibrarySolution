@@ -35,6 +35,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AppDbContext\AppDbContext.csproj" />
     <ProjectReference Include="..\BaseAPI\BaseAPI.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 

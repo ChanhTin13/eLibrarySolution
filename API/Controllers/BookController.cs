@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Models;
 using Request.RequestCreate;
 using Request.RequestUpdate;
 using Service.Services;
@@ -142,10 +143,9 @@ namespace API.Controllers
         public async Task<AppDomainResult> GetBookByIBSN(string IBSN)
         {
             AppDomainResult appDomainResult = new AppDomainResult();
-            var item = await this.bookService.GetBookByIBSNAsync(IBSN);
+            tbl_Book item = await this.bookService.GetBookByIBSNAsync(IBSN);
             if (item != null)
-            {
-
+            { 
                 var title = await titleService.GetByIdAsync(item.titleId);
                 //var counter = await coun.GetByIdAsync(item.examId.Value);
                 item.titleName = title?.name;
